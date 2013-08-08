@@ -1,0 +1,13 @@
+We would like to thank professor Jorge Nocedal, Department of Electrical and Computer
+Engineering, School of Engineering and Applied Science, Northwestern University, for
+providing L-BFGS FORTRAN source code. www.ece.northwestern.edu/~nocedal/
+
+The C version of L-BFGS used in this project is borrowed from CRF++ project developed by
+Taku Kudo (www.chasen.org/~taku/software/CRF++/). We would like to thank him for his open
+source project.
+
+A part of this project, the training section (e.g., the computation of log-likelihood
+function and its gradient vector), is based on the Java source code of CRF project developed
+by professor Sunita Sarawagi, KR School of Information Technology, IIT Bombay. We would like
+to thank prof. Sunita Sarawagi for sharing the CRF package and answering related questions.
+www.it.iitb.in/~sunita/

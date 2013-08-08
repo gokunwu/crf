@@ -1,0 +1,1792 @@
+OPTION VALUES:
+
+Model directory: ./
+Training data file: train.tagged
+Testing data file: test.tagged
+Unlabeled data file: data.untagged
+Label representation: IOB2
+Model file: model.txt
+Training log file (this one): trainlog.txt
+
+Second-order Markov CRFs
+
+Number of labels: 4
+Number of training sequences: 412
+Number of testing sequences: 86
+Number of unlabeled sequences: 0
+Number of context predicates: 10807
+Number of features: 17259
+Feature rare threshold: 1
+Context predicate rare threshold: 1
+Using multiple rare thresholds for features: 0
+Highlight feature: 0
+
+Number of training iterations: 60
+Initial lambda value:     0.0000
+Sigma square (for smoothing):   100.0000
+Epsilon for L-BFGS convergence:   0.000100
+Number of approximated hessian matrixes: 7
+Start to train ...
+
+Iteration: 1
+	Log-likelihood                       =     -26641.805032
+	Norm(log-likelihood gradient vector) =       5327.595333
+	Norm(lambda vector)                  =          0.000000
+	Iteration elapsed: 3 seconds
+	Label-based performance evaluation:
+
+		Label	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		b-np	529	491	371	 75.56	 70.13	 72.75
+		o	725	828	639	 77.17	 88.14	 82.29
+		i-np	691	626	508	 81.15	 73.52	 77.15
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 77.96	 77.26	 77.61
+		Avg2.	1945	1945	1518	 78.05	 78.05	 78.05
+
+	Chunk-based performance evaluation:
+
+		Chunk	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		np	529	491	269	 54.79	 50.85	 52.75
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 54.79	 50.85	 52.75
+		Avg2.	529	491	269	 54.79	 50.85	 52.75
+
+
+	Current max chunk-based F1:  52.75 (iteration 1)
+	Training iteration elapsed (including testing & evaluation time): 3 seconds
+
+Iteration: 2
+	Log-likelihood                       =     -21582.014208
+	Norm(log-likelihood gradient vector) =       4677.718113
+	Norm(lambda vector)                  =          1.000000
+	Iteration elapsed: 2 seconds
+	Label-based performance evaluation:
+
+		Label	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		b-np	529	486	388	 79.84	 73.35	 76.45
+		o	725	786	648	 82.44	 89.38	 85.77
+		i-np	691	673	551	 81.87	 79.74	 80.79
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 81.38	 80.82	 81.10
+		Avg2.	1945	1945	1587	 81.59	 81.59	 81.59
+
+	Chunk-based performance evaluation:
+
+		Chunk	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		np	529	486	293	 60.29	 55.39	 57.73
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 60.29	 55.39	 57.73
+		Avg2.	529	486	293	 60.29	 55.39	 57.73
+
+
+	Current max chunk-based F1:  57.73 (iteration 2)
+	Training iteration elapsed (including testing & evaluation time): 3 seconds
+
+Iteration: 3
+	Log-likelihood                       =      -9269.463734
+	Norm(log-likelihood gradient vector) =       3788.255409
+	Norm(lambda vector)                  =         10.401613
+	Iteration elapsed: 2 seconds
+	Label-based performance evaluation:
+
+		Label	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		b-np	529	402	380	 94.53	 71.83	 81.63
+		o	725	830	696	 83.86	 96.00	 89.52
+		i-np	691	713	614	 86.12	 88.86	 87.46
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 88.17	 85.56	 86.85
+		Avg2.	1945	1945	1690	 86.89	 86.89	 86.89
+
+	Chunk-based performance evaluation:
+
+		Chunk	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		np	529	402	310	 77.11	 58.60	 66.60
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 77.11	 58.60	 66.60
+		Avg2.	529	402	310	 77.11	 58.60	 66.60
+
+
+	Current max chunk-based F1:  66.60 (iteration 3)
+	Training iteration elapsed (including testing & evaluation time): 2 seconds
+
+Iteration: 4
+	Log-likelihood                       =      -6725.988433
+	Norm(log-likelihood gradient vector) =       1681.165107
+	Norm(lambda vector)                  =          9.913913
+	Iteration elapsed: 3 seconds
+	Label-based performance evaluation:
+
+		Label	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		b-np	529	506	459	 90.71	 86.77	 88.70
+		o	725	778	707	 90.87	 97.52	 94.08
+		i-np	691	661	607	 91.83	 87.84	 89.79
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 91.14	 90.71	 90.92
+		Avg2.	1945	1945	1773	 91.16	 91.16	 91.16
+
+	Chunk-based performance evaluation:
+
+		Chunk	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		np	529	506	387	 76.48	 73.16	 74.78
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 76.48	 73.16	 74.78
+		Avg2.	529	506	387	 76.48	 73.16	 74.78
+
+
+	Current max chunk-based F1:  74.78 (iteration 4)
+	Training iteration elapsed (including testing & evaluation time): 3 seconds
+
+Iteration: 5
+	Log-likelihood                       =      -6270.380695
+	Norm(log-likelihood gradient vector) =       1015.841971
+	Norm(lambda vector)                  =          9.252770
+	Iteration elapsed: 3 seconds
+	Label-based performance evaluation:
+
+		Label	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		b-np	529	508	458	 90.16	 86.58	 88.33
+		o	725	800	713	 89.12	 98.34	 93.51
+		i-np	691	637	592	 92.94	 85.67	 89.16
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 90.74	 90.20	 90.47
+		Avg2.	1945	1945	1763	 90.64	 90.64	 90.64
+
+	Chunk-based performance evaluation:
+
+		Chunk	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		np	529	508	388	 76.38	 73.35	 74.83
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 76.38	 73.35	 74.83
+		Avg2.	529	508	388	 76.38	 73.35	 74.83
+
+
+	Current max chunk-based F1:  74.83 (iteration 5)
+	Training iteration elapsed (including testing & evaluation time): 3 seconds
+
+Iteration: 6
+	Log-likelihood                       =      -5969.689414
+	Norm(log-likelihood gradient vector) =        650.921272
+	Norm(lambda vector)                  =          9.234898
+	Iteration elapsed: 2 seconds
+	Label-based performance evaluation:
+
+		Label	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		b-np	529	520	481	 92.50	 90.93	 91.71
+		o	725	791	715	 90.39	 98.62	 94.33
+		i-np	691	634	608	 95.90	 87.99	 91.77
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 92.93	 92.51	 92.72
+		Avg2.	1945	1945	1804	 92.75	 92.75	 92.75
+
+	Chunk-based performance evaluation:
+
+		Chunk	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		np	529	520	431	 82.88	 81.47	 82.17
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 82.88	 81.47	 82.17
+		Avg2.	529	520	431	 82.88	 81.47	 82.17
+
+
+	Current max chunk-based F1:  82.17 (iteration 6)
+	Training iteration elapsed (including testing & evaluation time): 2 seconds
+
+Iteration: 7
+	Log-likelihood                       =      -5516.616482
+	Norm(log-likelihood gradient vector) =        606.694867
+	Norm(lambda vector)                  =          9.900934
+	Iteration elapsed: 3 seconds
+	Label-based performance evaluation:
+
+		Label	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		b-np	529	516	485	 93.99	 91.68	 92.82
+		o	725	776	717	 92.40	 98.90	 95.54
+		i-np	691	653	630	 96.48	 91.17	 93.75
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 94.29	 93.92	 94.10
+		Avg2.	1945	1945	1832	 94.19	 94.19	 94.19
+
+	Chunk-based performance evaluation:
+
+		Chunk	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		np	529	516	447	 86.63	 84.50	 85.55
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 86.63	 84.50	 85.55
+		Avg2.	529	516	447	 86.63	 84.50	 85.55
+
+
+	Current max chunk-based F1:  85.55 (iteration 7)
+	Training iteration elapsed (including testing & evaluation time): 3 seconds
+
+Iteration: 8
+	Log-likelihood                       =      -4872.376953
+	Norm(log-likelihood gradient vector) =        569.146507
+	Norm(lambda vector)                  =         11.534266
+	Iteration elapsed: 3 seconds
+	Label-based performance evaluation:
+
+		Label	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		b-np	529	510	491	 96.27	 92.82	 94.51
+		o	725	741	710	 95.82	 97.93	 96.86
+		i-np	691	694	660	 95.10	 95.51	 95.31
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 95.73	 95.42	 95.58
+		Avg2.	1945	1945	1861	 95.68	 95.68	 95.68
+
+	Chunk-based performance evaluation:
+
+		Chunk	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		np	529	510	458	 89.80	 86.58	 88.16
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 89.80	 86.58	 88.16
+		Avg2.	529	510	458	 89.80	 86.58	 88.16
+
+
+	Current max chunk-based F1:  88.16 (iteration 8)
+	Training iteration elapsed (including testing & evaluation time): 3 seconds
+
+Iteration: 9
+	Log-likelihood                       =      -4079.737290
+	Norm(log-likelihood gradient vector) =        795.363991
+	Norm(lambda vector)                  =         15.318898
+	Iteration elapsed: 2 seconds
+	Label-based performance evaluation:
+
+		Label	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		b-np	529	526	502	 95.44	 94.90	 95.17
+		o	725	763	722	 94.63	 99.59	 97.04
+		i-np	691	656	641	 97.71	 92.76	 95.17
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 95.93	 95.75	 95.84
+		Avg2.	1945	1945	1865	 95.89	 95.89	 95.89
+
+	Chunk-based performance evaluation:
+
+		Chunk	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		np	529	526	471	 89.54	 89.04	 89.29
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 89.54	 89.04	 89.29
+		Avg2.	529	526	471	 89.54	 89.04	 89.29
+
+
+	Current max chunk-based F1:  89.29 (iteration 9)
+	Training iteration elapsed (including testing & evaluation time): 3 seconds
+
+Iteration: 10
+	Log-likelihood                       =      -3616.619518
+	Norm(log-likelihood gradient vector) =        368.298852
+	Norm(lambda vector)                  =         17.278879
+	Iteration elapsed: 2 seconds
+	Label-based performance evaluation:
+
+		Label	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		b-np	529	527	503	 95.45	 95.09	 95.27
+		o	725	762	722	 94.75	 99.59	 97.11
+		i-np	691	656	641	 97.71	 92.76	 95.17
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 95.97	 95.81	 95.89
+		Avg2.	1945	1945	1866	 95.94	 95.94	 95.94
+
+	Chunk-based performance evaluation:
+
+		Chunk	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		np	529	527	472	 89.56	 89.22	 89.39
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 89.56	 89.22	 89.39
+		Avg2.	529	527	472	 89.56	 89.22	 89.39
+
+
+	Current max chunk-based F1:  89.39 (iteration 10)
+	Training iteration elapsed (including testing & evaluation time): 2 seconds
+
+Iteration: 11
+	Log-likelihood                       =      -3401.327153
+	Norm(log-likelihood gradient vector) =        344.623130
+	Norm(lambda vector)                  =         19.439680
+	Iteration elapsed: 3 seconds
+	Label-based performance evaluation:
+
+		Label	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		b-np	529	529	503	 95.09	 95.09	 95.09
+		o	725	762	721	 94.62	 99.45	 96.97
+		i-np	691	654	640	 97.86	 92.62	 95.17
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 95.85	 95.72	 95.79
+		Avg2.	1945	1945	1864	 95.84	 95.84	 95.84
+
+	Chunk-based performance evaluation:
+
+		Chunk	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		np	529	529	474	 89.60	 89.60	 89.60
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 89.60	 89.60	 89.60
+		Avg2.	529	529	474	 89.60	 89.60	 89.60
+
+
+	Current max chunk-based F1:  89.60 (iteration 11)
+	Training iteration elapsed (including testing & evaluation time): 3 seconds
+
+Iteration: 12
+	Log-likelihood                       =      -3077.749137
+	Norm(log-likelihood gradient vector) =        297.771105
+	Norm(lambda vector)                  =         23.055484
+	Iteration elapsed: 2 seconds
+	Label-based performance evaluation:
+
+		Label	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		b-np	529	515	500	 97.09	 94.52	 95.79
+		o	725	742	716	 96.50	 98.76	 97.61
+		i-np	691	688	663	 96.37	 95.95	 96.16
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 96.65	 96.41	 96.53
+		Avg2.	1945	1945	1879	 96.61	 96.61	 96.61
+
+	Chunk-based performance evaluation:
+
+		Chunk	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		np	529	515	475	 92.23	 89.79	 91.00
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 92.23	 89.79	 91.00
+		Avg2.	529	515	475	 92.23	 89.79	 91.00
+
+
+	Current max chunk-based F1:  91.00 (iteration 12)
+	Training iteration elapsed (including testing & evaluation time): 3 seconds
+
+Iteration: 13
+	Log-likelihood                       =      -2874.128684
+	Norm(log-likelihood gradient vector) =        571.084534
+	Norm(lambda vector)                  =         27.459907
+	Iteration elapsed: 2 seconds
+	Label-based performance evaluation:
+
+		Label	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		b-np	529	524	506	 96.56	 95.65	 96.11
+		o	725	749	720	 96.13	 99.31	 97.69
+		i-np	691	672	657	 97.77	 95.08	 96.40
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 96.82	 96.68	 96.75
+		Avg2.	1945	1945	1883	 96.81	 96.81	 96.81
+
+	Chunk-based performance evaluation:
+
+		Chunk	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		np	529	524	483	 92.18	 91.30	 91.74
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 92.18	 91.30	 91.74
+		Avg2.	529	524	483	 92.18	 91.30	 91.74
+
+
+	Current max chunk-based F1:  91.74 (iteration 13)
+	Training iteration elapsed (including testing & evaluation time): 2 seconds
+
+Iteration: 14
+	Log-likelihood                       =      -2727.109929
+	Norm(log-likelihood gradient vector) =        290.827106
+	Norm(lambda vector)                  =         28.536432
+	Iteration elapsed: 3 seconds
+	Label-based performance evaluation:
+
+		Label	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		b-np	529	527	509	 96.58	 96.22	 96.40
+		o	725	749	721	 96.26	 99.45	 97.83
+		i-np	691	669	658	 98.36	 95.22	 96.76
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 97.07	 96.96	 97.02
+		Avg2.	1945	1945	1888	 97.07	 97.07	 97.07
+
+	Chunk-based performance evaluation:
+
+		Chunk	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		np	529	527	489	 92.79	 92.44	 92.61
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 92.79	 92.44	 92.61
+		Avg2.	529	527	489	 92.79	 92.44	 92.61
+
+
+	Current max chunk-based F1:  92.61 (iteration 14)
+	Training iteration elapsed (including testing & evaluation time): 3 seconds
+
+Iteration: 15
+	Log-likelihood                       =      -2610.850678
+	Norm(log-likelihood gradient vector) =        192.260821
+	Norm(lambda vector)                  =         29.748733
+	Iteration elapsed: 3 seconds
+	Label-based performance evaluation:
+
+		Label	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		b-np	529	530	509	 96.04	 96.22	 96.13
+		o	725	752	721	 95.88	 99.45	 97.63
+		i-np	691	663	652	 98.34	 94.36	 96.31
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 96.75	 96.67	 96.71
+		Avg2.	1945	1945	1882	 96.76	 96.76	 96.76
+
+	Chunk-based performance evaluation:
+
+		Chunk	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		np	529	530	487	 91.89	 92.06	 91.97
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 91.89	 92.06	 91.97
+		Avg2.	529	530	487	 91.89	 92.06	 91.97
+
+
+	Current max chunk-based F1:  92.61 (iteration 14)
+	Training iteration elapsed (including testing & evaluation time): 3 seconds
+
+Iteration: 16
+	Log-likelihood                       =      -2495.206889
+	Norm(log-likelihood gradient vector) =        208.792291
+	Norm(lambda vector)                  =         31.031253
+	Iteration elapsed: 2 seconds
+	Label-based performance evaluation:
+
+		Label	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		b-np	529	530	508	 95.85	 96.03	 95.94
+		o	725	755	721	 95.50	 99.45	 97.43
+		i-np	691	660	647	 98.03	 93.63	 95.78
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 96.46	 96.37	 96.41
+		Avg2.	1945	1945	1876	 96.45	 96.45	 96.45
+
+	Chunk-based performance evaluation:
+
+		Chunk	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		np	529	530	481	 90.75	 90.93	 90.84
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 90.75	 90.93	 90.84
+		Avg2.	529	530	481	 90.75	 90.93	 90.84
+
+
+	Current max chunk-based F1:  92.61 (iteration 14)
+	Training iteration elapsed (including testing & evaluation time): 2 seconds
+
+Iteration: 17
+	Log-likelihood                       =      -2262.306669
+	Norm(log-likelihood gradient vector) =        190.425904
+	Norm(lambda vector)                  =         33.900238
+	Iteration elapsed: 3 seconds
+	Label-based performance evaluation:
+
+		Label	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		b-np	529	521	501	 96.16	 94.71	 95.43
+		o	725	752	718	 95.48	 99.03	 97.22
+		i-np	691	672	650	 96.73	 94.07	 95.38
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 96.12	 95.94	 96.03
+		Avg2.	1945	1945	1869	 96.09	 96.09	 96.09
+
+	Chunk-based performance evaluation:
+
+		Chunk	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		np	529	521	472	 90.60	 89.22	 89.90
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 90.60	 89.22	 89.90
+		Avg2.	529	521	472	 90.60	 89.22	 89.90
+
+
+	Current max chunk-based F1:  92.61 (iteration 14)
+	Training iteration elapsed (including testing & evaluation time): 3 seconds
+
+Iteration: 18
+	Log-likelihood                       =      -2111.935104
+	Norm(log-likelihood gradient vector) =        582.050917
+	Norm(lambda vector)                  =         41.183676
+	Iteration elapsed: 3 seconds
+	Label-based performance evaluation:
+
+		Label	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		b-np	529	525	505	 96.19	 95.46	 95.83
+		o	725	752	719	 95.61	 99.17	 97.36
+		i-np	691	668	649	 97.16	 93.92	 95.51
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 96.32	 96.19	 96.25
+		Avg2.	1945	1945	1873	 96.30	 96.30	 96.30
+
+	Chunk-based performance evaluation:
+
+		Chunk	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		np	529	525	476	 90.67	 89.98	 90.32
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 90.67	 89.98	 90.32
+		Avg2.	529	525	476	 90.67	 89.98	 90.32
+
+
+	Current max chunk-based F1:  92.61 (iteration 14)
+	Training iteration elapsed (including testing & evaluation time): 3 seconds
+
+Iteration: 19
+	Log-likelihood                       =      -1813.840084
+	Norm(log-likelihood gradient vector) =        189.367128
+	Norm(lambda vector)                  =         42.420653
+	Iteration elapsed: 2 seconds
+	Label-based performance evaluation:
+
+		Label	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		b-np	529	525	506	 96.38	 95.65	 96.02
+		o	725	749	719	 95.99	 99.17	 97.56
+		i-np	691	671	652	 97.17	 94.36	 95.74
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 96.51	 96.39	 96.45
+		Avg2.	1945	1945	1877	 96.50	 96.50	 96.50
+
+	Chunk-based performance evaluation:
+
+		Chunk	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		np	529	525	476	 90.67	 89.98	 90.32
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 90.67	 89.98	 90.32
+		Avg2.	529	525	476	 90.67	 89.98	 90.32
+
+
+	Current max chunk-based F1:  92.61 (iteration 14)
+	Training iteration elapsed (including testing & evaluation time): 3 seconds
+
+Iteration: 20
+	Log-likelihood                       =      -1725.977139
+	Norm(log-likelihood gradient vector) =        122.741876
+	Norm(lambda vector)                  =         43.414242
+	Iteration elapsed: 2 seconds
+	Label-based performance evaluation:
+
+		Label	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		b-np	529	523	505	 96.56	 95.46	 96.01
+		o	725	745	718	 96.38	 99.03	 97.69
+		i-np	691	677	656	 96.90	 94.93	 95.91
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 96.61	 96.48	 96.54
+		Avg2.	1945	1945	1879	 96.61	 96.61	 96.61
+
+	Chunk-based performance evaluation:
+
+		Chunk	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		np	529	523	476	 91.01	 89.98	 90.49
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 91.01	 89.98	 90.49
+		Avg2.	529	523	476	 91.01	 89.98	 90.49
+
+
+	Current max chunk-based F1:  92.61 (iteration 14)
+	Training iteration elapsed (including testing & evaluation time): 2 seconds
+
+Iteration: 21
+	Log-likelihood                       =      -1604.698049
+	Norm(log-likelihood gradient vector) =        112.755720
+	Norm(lambda vector)                  =         45.683589
+	Iteration elapsed: 3 seconds
+	Label-based performance evaluation:
+
+		Label	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		b-np	529	526	508	 96.58	 96.03	 96.30
+		o	725	746	721	 96.65	 99.45	 98.03
+		i-np	691	673	658	 97.77	 95.22	 96.48
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 97.00	 96.90	 96.95
+		Avg2.	1945	1945	1887	 97.02	 97.02	 97.02
+
+	Chunk-based performance evaluation:
+
+		Chunk	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		np	529	526	482	 91.63	 91.12	 91.37
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 91.63	 91.12	 91.37
+		Avg2.	529	526	482	 91.63	 91.12	 91.37
+
+
+	Current max chunk-based F1:  92.61 (iteration 14)
+	Training iteration elapsed (including testing & evaluation time): 3 seconds
+
+Iteration: 22
+	Log-likelihood                       =      -1483.869995
+	Norm(log-likelihood gradient vector) =        143.153108
+	Norm(lambda vector)                  =         48.646591
+	Iteration elapsed: 3 seconds
+	Label-based performance evaluation:
+
+		Label	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		b-np	529	535	516	 96.45	 97.54	 96.99
+		o	725	745	722	 96.91	 99.59	 98.23
+		i-np	691	665	656	 98.65	 94.93	 96.76
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 97.34	 97.35	 97.35
+		Avg2.	1945	1945	1894	 97.38	 97.38	 97.38
+
+	Chunk-based performance evaluation:
+
+		Chunk	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		np	529	535	492	 91.96	 93.01	 92.48
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 91.96	 93.01	 92.48
+		Avg2.	529	535	492	 91.96	 93.01	 92.48
+
+
+	Current max chunk-based F1:  92.61 (iteration 14)
+	Training iteration elapsed (including testing & evaluation time): 3 seconds
+
+Iteration: 23
+	Log-likelihood                       =      -1331.861185
+	Norm(log-likelihood gradient vector) =        172.722852
+	Norm(lambda vector)                  =         54.533690
+	Iteration elapsed: 2 seconds
+	Label-based performance evaluation:
+
+		Label	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		b-np	529	532	515	 96.80	 97.35	 97.08
+		o	725	743	722	 97.17	 99.59	 98.37
+		i-np	691	670	659	 98.36	 95.37	 96.84
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 97.45	 97.44	 97.44
+		Avg2.	1945	1945	1896	 97.48	 97.48	 97.48
+
+	Chunk-based performance evaluation:
+
+		Chunk	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		np	529	532	490	 92.11	 92.63	 92.37
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 92.11	 92.63	 92.37
+		Avg2.	529	532	490	 92.11	 92.63	 92.37
+
+
+	Current max chunk-based F1:  92.61 (iteration 14)
+	Training iteration elapsed (including testing & evaluation time): 2 seconds
+
+Iteration: 24
+	Log-likelihood                       =      -1212.661370
+	Norm(log-likelihood gradient vector) =        126.200371
+	Norm(lambda vector)                  =         59.788284
+	Iteration elapsed: 3 seconds
+	Label-based performance evaluation:
+
+		Label	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		b-np	529	532	516	 96.99	 97.54	 97.27
+		o	725	744	723	 97.18	 99.72	 98.43
+		i-np	691	669	660	 98.65	 95.51	 97.06
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 97.61	 97.59	 97.60
+		Avg2.	1945	1945	1899	 97.63	 97.63	 97.63
+
+	Chunk-based performance evaluation:
+
+		Chunk	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		np	529	532	493	 92.67	 93.19	 92.93
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 92.67	 93.19	 92.93
+		Avg2.	529	532	493	 92.67	 93.19	 92.93
+
+
+	Current max chunk-based F1:  92.93 (iteration 24)
+	Training iteration elapsed (including testing & evaluation time): 3 seconds
+
+Iteration: 25
+	Log-likelihood                       =      -1163.592896
+	Norm(log-likelihood gradient vector) =        113.871440
+	Norm(lambda vector)                  =         59.674526
+	Iteration elapsed: 3 seconds
+	Label-based performance evaluation:
+
+		Label	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		b-np	529	533	511	 95.87	 96.60	 96.23
+		o	725	752	722	 96.01	 99.59	 97.77
+		i-np	691	660	648	 98.18	 93.78	 95.93
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 96.69	 96.65	 96.67
+		Avg2.	1945	1945	1881	 96.71	 96.71	 96.71
+
+	Chunk-based performance evaluation:
+
+		Chunk	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		np	529	533	487	 91.37	 92.06	 91.71
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 91.37	 92.06	 91.71
+		Avg2.	529	533	487	 91.37	 92.06	 91.71
+
+
+	Current max chunk-based F1:  92.93 (iteration 24)
+	Training iteration elapsed (including testing & evaluation time): 3 seconds
+
+Iteration: 26
+	Log-likelihood                       =      -1156.189097
+	Norm(log-likelihood gradient vector) =        194.921013
+	Norm(lambda vector)                  =         59.270862
+	Iteration elapsed: 2 seconds
+	Label-based performance evaluation:
+
+		Label	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		b-np	529	535	514	 96.07	 97.16	 96.62
+		o	725	750	722	 96.27	 99.59	 97.90
+		i-np	691	660	651	 98.64	 94.21	 96.37
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 96.99	 96.99	 96.99
+		Avg2.	1945	1945	1887	 97.02	 97.02	 97.02
+
+	Chunk-based performance evaluation:
+
+		Chunk	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		np	529	535	493	 92.15	 93.19	 92.67
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 92.15	 93.19	 92.67
+		Avg2.	529	535	493	 92.15	 93.19	 92.67
+
+
+	Current max chunk-based F1:  92.93 (iteration 24)
+	Training iteration elapsed (including testing & evaluation time): 2 seconds
+
+Iteration: 27
+	Log-likelihood                       =      -1154.162133
+	Norm(log-likelihood gradient vector) =        251.478948
+	Norm(lambda vector)                  =         60.697045
+	Iteration elapsed: 3 seconds
+	Label-based performance evaluation:
+
+		Label	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		b-np	529	535	514	 96.07	 97.16	 96.62
+		o	725	751	722	 96.14	 99.59	 97.83
+		i-np	691	659	650	 98.63	 94.07	 96.30
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 96.95	 96.94	 96.94
+		Avg2.	1945	1945	1886	 96.97	 96.97	 96.97
+
+	Chunk-based performance evaluation:
+
+		Chunk	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		np	529	535	492	 91.96	 93.01	 92.48
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 91.96	 93.01	 92.48
+		Avg2.	529	535	492	 91.96	 93.01	 92.48
+
+
+	Current max chunk-based F1:  92.93 (iteration 24)
+	Training iteration elapsed (including testing & evaluation time): 3 seconds
+
+Iteration: 28
+	Log-likelihood                       =      -1085.814942
+	Norm(log-likelihood gradient vector) =        107.650993
+	Norm(lambda vector)                  =         62.122666
+	Iteration elapsed: 3 seconds
+	Label-based performance evaluation:
+
+		Label	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		b-np	529	536	514	 95.90	 97.16	 96.53
+		o	725	752	722	 96.01	 99.59	 97.77
+		i-np	691	657	647	 98.48	 93.63	 95.99
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 96.79	 96.79	 96.79
+		Avg2.	1945	1945	1883	 96.81	 96.81	 96.81
+
+	Chunk-based performance evaluation:
+
+		Chunk	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		np	529	536	491	 91.60	 92.82	 92.21
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 91.60	 92.82	 92.21
+		Avg2.	529	536	491	 91.60	 92.82	 92.21
+
+
+	Current max chunk-based F1:  92.93 (iteration 24)
+	Training iteration elapsed (including testing & evaluation time): 3 seconds
+
+Iteration: 29
+	Log-likelihood                       =      -1046.357458
+	Norm(log-likelihood gradient vector) =         71.378414
+	Norm(lambda vector)                  =         64.555113
+	Iteration elapsed: 2 seconds
+	Label-based performance evaluation:
+
+		Label	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		b-np	529	535	514	 96.07	 97.16	 96.62
+		o	725	751	722	 96.14	 99.59	 97.83
+		i-np	691	659	649	 98.48	 93.92	 96.15
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 96.90	 96.89	 96.89
+		Avg2.	1945	1945	1885	 96.92	 96.92	 96.92
+
+	Chunk-based performance evaluation:
+
+		Chunk	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		np	529	535	491	 91.78	 92.82	 92.29
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 91.78	 92.82	 92.29
+		Avg2.	529	535	491	 91.78	 92.82	 92.29
+
+
+	Current max chunk-based F1:  92.93 (iteration 24)
+	Training iteration elapsed (including testing & evaluation time): 3 seconds
+
+Iteration: 30
+	Log-likelihood                       =      -1014.180158
+	Norm(log-likelihood gradient vector) =         83.077154
+	Norm(lambda vector)                  =         66.953281
+	Iteration elapsed: 2 seconds
+	Label-based performance evaluation:
+
+		Label	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		b-np	529	534	514	 96.25	 97.16	 96.71
+		o	725	749	722	 96.40	 99.59	 97.96
+		i-np	691	662	652	 98.49	 94.36	 96.38
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 97.05	 97.04	 97.04
+		Avg2.	1945	1945	1888	 97.07	 97.07	 97.07
+
+	Chunk-based performance evaluation:
+
+		Chunk	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		np	529	534	493	 92.32	 93.19	 92.76
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 92.32	 93.19	 92.76
+		Avg2.	529	534	493	 92.32	 93.19	 92.76
+
+
+	Current max chunk-based F1:  92.93 (iteration 24)
+	Training iteration elapsed (including testing & evaluation time): 2 seconds
+
+Iteration: 31
+	Log-likelihood                       =       -948.361601
+	Norm(log-likelihood gradient vector) =         88.858259
+	Norm(lambda vector)                  =         70.010782
+	Iteration elapsed: 3 seconds
+	Label-based performance evaluation:
+
+		Label	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		b-np	529	539	514	 95.36	 97.16	 96.25
+		o	725	753	722	 95.88	 99.59	 97.70
+		i-np	691	653	644	 98.62	 93.20	 95.83
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 96.62	 96.65	 96.64
+		Avg2.	1945	1945	1880	 96.66	 96.66	 96.66
+
+	Chunk-based performance evaluation:
+
+		Chunk	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		np	529	539	491	 91.09	 92.82	 91.95
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 91.09	 92.82	 91.95
+		Avg2.	529	539	491	 91.09	 92.82	 91.95
+
+
+	Current max chunk-based F1:  92.93 (iteration 24)
+	Training iteration elapsed (including testing & evaluation time): 3 seconds
+
+Iteration: 32
+	Log-likelihood                       =       -925.508126
+	Norm(log-likelihood gradient vector) =        242.362625
+	Norm(lambda vector)                  =         74.051341
+	Iteration elapsed: 3 seconds
+	Label-based performance evaluation:
+
+		Label	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		b-np	529	534	513	 96.07	 96.98	 96.52
+		o	725	748	721	 96.39	 99.45	 97.90
+		i-np	691	663	652	 98.34	 94.36	 96.31
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 96.93	 96.93	 96.93
+		Avg2.	1945	1945	1886	 96.97	 96.97	 96.97
+
+	Chunk-based performance evaluation:
+
+		Chunk	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		np	529	534	493	 92.32	 93.19	 92.76
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 92.32	 93.19	 92.76
+		Avg2.	529	534	493	 92.32	 93.19	 92.76
+
+
+	Current max chunk-based F1:  92.93 (iteration 24)
+	Training iteration elapsed (including testing & evaluation time): 3 seconds
+
+Iteration: 33
+	Log-likelihood                       =       -868.149846
+	Norm(log-likelihood gradient vector) =         75.192894
+	Norm(lambda vector)                  =         73.648661
+	Iteration elapsed: 2 seconds
+	Label-based performance evaluation:
+
+		Label	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		b-np	529	534	513	 96.07	 96.98	 96.52
+		o	725	748	721	 96.39	 99.45	 97.90
+		i-np	691	663	652	 98.34	 94.36	 96.31
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 96.93	 96.93	 96.93
+		Avg2.	1945	1945	1886	 96.97	 96.97	 96.97
+
+	Chunk-based performance evaluation:
+
+		Chunk	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		np	529	534	493	 92.32	 93.19	 92.76
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 92.32	 93.19	 92.76
+		Avg2.	529	534	493	 92.32	 93.19	 92.76
+
+
+	Current max chunk-based F1:  92.93 (iteration 24)
+	Training iteration elapsed (including testing & evaluation time): 3 seconds
+
+Iteration: 34
+	Log-likelihood                       =       -847.340354
+	Norm(log-likelihood gradient vector) =         55.420929
+	Norm(lambda vector)                  =         73.377900
+	Iteration elapsed: 2 seconds
+	Label-based performance evaluation:
+
+		Label	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		b-np	529	535	513	 95.89	 96.98	 96.43
+		o	725	748	721	 96.39	 99.45	 97.90
+		i-np	691	662	651	 98.34	 94.21	 96.23
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 96.87	 96.88	 96.88
+		Avg2.	1945	1945	1885	 96.92	 96.92	 96.92
+
+	Chunk-based performance evaluation:
+
+		Chunk	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		np	529	535	492	 91.96	 93.01	 92.48
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 91.96	 93.01	 92.48
+		Avg2.	529	535	492	 91.96	 93.01	 92.48
+
+
+	Current max chunk-based F1:  92.93 (iteration 24)
+	Training iteration elapsed (including testing & evaluation time): 2 seconds
+
+Iteration: 35
+	Log-likelihood                       =       -816.799250
+	Norm(log-likelihood gradient vector) =         64.737245
+	Norm(lambda vector)                  =         73.814475
+	Iteration elapsed: 3 seconds
+	Label-based performance evaluation:
+
+		Label	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		b-np	529	534	513	 96.07	 96.98	 96.52
+		o	725	748	721	 96.39	 99.45	 97.90
+		i-np	691	663	652	 98.34	 94.36	 96.31
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 96.93	 96.93	 96.93
+		Avg2.	1945	1945	1886	 96.97	 96.97	 96.97
+
+	Chunk-based performance evaluation:
+
+		Chunk	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		np	529	534	493	 92.32	 93.19	 92.76
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 92.32	 93.19	 92.76
+		Avg2.	529	534	493	 92.32	 93.19	 92.76
+
+
+	Current max chunk-based F1:  92.93 (iteration 24)
+	Training iteration elapsed (including testing & evaluation time): 3 seconds
+
+Iteration: 36
+	Log-likelihood                       =       -766.649638
+	Norm(log-likelihood gradient vector) =         65.650185
+	Norm(lambda vector)                  =         75.802568
+	Iteration elapsed: 2 seconds
+	Label-based performance evaluation:
+
+		Label	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		b-np	529	531	511	 96.23	 96.60	 96.42
+		o	725	743	720	 96.90	 99.31	 98.09
+		i-np	691	671	657	 97.91	 95.08	 96.48
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 97.02	 97.00	 97.01
+		Avg2.	1945	1945	1888	 97.07	 97.07	 97.07
+
+	Chunk-based performance evaluation:
+
+		Chunk	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		np	529	531	491	 92.47	 92.82	 92.64
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 92.47	 92.82	 92.64
+		Avg2.	529	531	491	 92.47	 92.82	 92.64
+
+
+	Current max chunk-based F1:  92.93 (iteration 24)
+	Training iteration elapsed (including testing & evaluation time): 3 seconds
+
+Iteration: 37
+	Log-likelihood                       =       -689.565855
+	Norm(log-likelihood gradient vector) =        166.555233
+	Norm(lambda vector)                  =         80.082637
+	Iteration elapsed: 2 seconds
+	Label-based performance evaluation:
+
+		Label	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		b-np	529	534	512	 95.88	 96.79	 96.33
+		o	725	749	721	 96.26	 99.45	 97.83
+		i-np	691	662	651	 98.34	 94.21	 96.23
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 96.83	 96.82	 96.82
+		Avg2.	1945	1945	1884	 96.86	 96.86	 96.86
+
+	Chunk-based performance evaluation:
+
+		Chunk	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		np	529	534	491	 91.95	 92.82	 92.38
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 91.95	 92.82	 92.38
+		Avg2.	529	534	491	 91.95	 92.82	 92.38
+
+
+	Current max chunk-based F1:  92.93 (iteration 24)
+	Training iteration elapsed (including testing & evaluation time): 2 seconds
+
+Iteration: 38
+	Log-likelihood                       =       -629.807429
+	Norm(log-likelihood gradient vector) =         58.758443
+	Norm(lambda vector)                  =         81.957445
+	Iteration elapsed: 3 seconds
+	Label-based performance evaluation:
+
+		Label	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		b-np	529	534	512	 95.88	 96.79	 96.33
+		o	725	747	721	 96.52	 99.45	 97.96
+		i-np	691	664	653	 98.34	 94.50	 96.38
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 96.91	 96.91	 96.91
+		Avg2.	1945	1945	1886	 96.97	 96.97	 96.97
+
+	Chunk-based performance evaluation:
+
+		Chunk	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		np	529	534	491	 91.95	 92.82	 92.38
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 91.95	 92.82	 92.38
+		Avg2.	529	534	491	 91.95	 92.82	 92.38
+
+
+	Current max chunk-based F1:  92.93 (iteration 24)
+	Training iteration elapsed (including testing & evaluation time): 3 seconds
+
+Iteration: 39
+	Log-likelihood                       =       -607.920013
+	Norm(log-likelihood gradient vector) =         48.497812
+	Norm(lambda vector)                  =         82.528934
+	Iteration elapsed: 3 seconds
+	Label-based performance evaluation:
+
+		Label	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		b-np	529	537	513	 95.53	 96.98	 96.25
+		o	725	750	722	 96.27	 99.59	 97.90
+		i-np	691	658	649	 98.63	 93.92	 96.22
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 96.81	 96.83	 96.82
+		Avg2.	1945	1945	1884	 96.86	 96.86	 96.86
+
+	Chunk-based performance evaluation:
+
+		Chunk	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		np	529	537	491	 91.43	 92.82	 92.12
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 91.43	 92.82	 92.12
+		Avg2.	529	537	491	 91.43	 92.82	 92.12
+
+
+	Current max chunk-based F1:  92.93 (iteration 24)
+	Training iteration elapsed (including testing & evaluation time): 3 seconds
+
+Iteration: 40
+	Log-likelihood                       =       -562.102825
+	Norm(log-likelihood gradient vector) =         32.321593
+	Norm(lambda vector)                  =         84.285747
+	Iteration elapsed: 2 seconds
+	Label-based performance evaluation:
+
+		Label	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		b-np	529	538	512	 95.17	 96.79	 95.97
+		o	725	751	722	 96.14	 99.59	 97.83
+		i-np	691	656	647	 98.63	 93.63	 96.07
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 96.64	 96.67	 96.66
+		Avg2.	1945	1945	1881	 96.71	 96.71	 96.71
+
+	Chunk-based performance evaluation:
+
+		Chunk	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		np	529	538	489	 90.89	 92.44	 91.66
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 90.89	 92.44	 91.66
+		Avg2.	529	538	489	 90.89	 92.44	 91.66
+
+
+	Current max chunk-based F1:  92.93 (iteration 24)
+	Training iteration elapsed (including testing & evaluation time): 2 seconds
+
+Iteration: 41
+	Log-likelihood                       =       -508.560227
+	Norm(log-likelihood gradient vector) =         39.517495
+	Norm(lambda vector)                  =         87.277170
+	Iteration elapsed: 3 seconds
+	Label-based performance evaluation:
+
+		Label	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		b-np	529	530	508	 95.85	 96.03	 95.94
+		o	725	743	719	 96.77	 99.17	 97.96
+		i-np	691	672	656	 97.62	 94.93	 96.26
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 96.75	 96.71	 96.73
+		Avg2.	1945	1945	1883	 96.81	 96.81	 96.81
+
+	Chunk-based performance evaluation:
+
+		Chunk	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		np	529	530	484	 91.32	 91.49	 91.41
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 91.32	 91.49	 91.41
+		Avg2.	529	530	484	 91.32	 91.49	 91.41
+
+
+	Current max chunk-based F1:  92.93 (iteration 24)
+	Training iteration elapsed (including testing & evaluation time): 3 seconds
+
+Iteration: 42
+	Log-likelihood                       =       -486.672774
+	Norm(log-likelihood gradient vector) =        164.653400
+	Norm(lambda vector)                  =         91.083795
+	Iteration elapsed: 2 seconds
+	Label-based performance evaluation:
+
+		Label	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		b-np	529	536	511	 95.34	 96.60	 95.96
+		o	725	750	722	 96.27	 99.59	 97.90
+		i-np	691	659	649	 98.48	 93.92	 96.15
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 96.70	 96.70	 96.70
+		Avg2.	1945	1945	1882	 96.76	 96.76	 96.76
+
+	Chunk-based performance evaluation:
+
+		Chunk	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		np	529	536	488	 91.04	 92.25	 91.64
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 91.04	 92.25	 91.64
+		Avg2.	529	536	488	 91.04	 92.25	 91.64
+
+
+	Current max chunk-based F1:  92.93 (iteration 24)
+	Training iteration elapsed (including testing & evaluation time): 2 seconds
+
+Iteration: 43
+	Log-likelihood                       =       -487.542661
+	Norm(log-likelihood gradient vector) =         60.751106
+	Norm(lambda vector)                  =         88.756574
+	Iteration elapsed: 3 seconds
+	Label-based performance evaluation:
+
+		Label	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		b-np	529	537	511	 95.16	 96.60	 95.87
+		o	725	750	722	 96.27	 99.59	 97.90
+		i-np	691	658	648	 98.48	 93.78	 96.07
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 96.64	 96.65	 96.64
+		Avg2.	1945	1945	1881	 96.71	 96.71	 96.71
+
+	Chunk-based performance evaluation:
+
+		Chunk	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		np	529	537	488	 90.88	 92.25	 91.56
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 90.88	 92.25	 91.56
+		Avg2.	529	537	488	 90.88	 92.25	 91.56
+
+
+	Current max chunk-based F1:  92.93 (iteration 24)
+	Training iteration elapsed (including testing & evaluation time): 3 seconds
+
+Iteration: 44
+	Log-likelihood                       =       -469.798390
+	Norm(log-likelihood gradient vector) =         38.519398
+	Norm(lambda vector)                  =         89.675731
+	Iteration elapsed: 2 seconds
+	Label-based performance evaluation:
+
+		Label	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		b-np	529	537	511	 95.16	 96.60	 95.87
+		o	725	750	722	 96.27	 99.59	 97.90
+		i-np	691	658	648	 98.48	 93.78	 96.07
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 96.64	 96.65	 96.64
+		Avg2.	1945	1945	1881	 96.71	 96.71	 96.71
+
+	Chunk-based performance evaluation:
+
+		Chunk	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		np	529	537	488	 90.88	 92.25	 91.56
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 90.88	 92.25	 91.56
+		Avg2.	529	537	488	 90.88	 92.25	 91.56
+
+
+	Current max chunk-based F1:  92.93 (iteration 24)
+	Training iteration elapsed (including testing & evaluation time): 3 seconds
+
+Iteration: 45
+	Log-likelihood                       =       -447.284542
+	Norm(log-likelihood gradient vector) =         31.830759
+	Norm(lambda vector)                  =         91.545305
+	Iteration elapsed: 2 seconds
+	Label-based performance evaluation:
+
+		Label	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		b-np	529	537	512	 95.34	 96.79	 96.06
+		o	725	749	722	 96.40	 99.59	 97.96
+		i-np	691	659	649	 98.48	 93.92	 96.15
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 96.74	 96.76	 96.75
+		Avg2.	1945	1945	1883	 96.81	 96.81	 96.81
+
+	Chunk-based performance evaluation:
+
+		Chunk	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		np	529	537	489	 91.06	 92.44	 91.74
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 91.06	 92.44	 91.74
+		Avg2.	529	537	489	 91.06	 92.44	 91.74
+
+
+	Current max chunk-based F1:  92.93 (iteration 24)
+	Training iteration elapsed (including testing & evaluation time): 2 seconds
+
+Iteration: 46
+	Log-likelihood                       =       -440.430558
+	Norm(log-likelihood gradient vector) =         31.988613
+	Norm(lambda vector)                  =         93.639895
+	Iteration elapsed: 3 seconds
+	Label-based performance evaluation:
+
+		Label	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		b-np	529	539	514	 95.36	 97.16	 96.25
+		o	725	746	722	 96.78	 99.59	 98.16
+		i-np	691	660	651	 98.64	 94.21	 96.37
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 96.93	 96.99	 96.96
+		Avg2.	1945	1945	1887	 97.02	 97.02	 97.02
+
+	Chunk-based performance evaluation:
+
+		Chunk	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		np	529	539	491	 91.09	 92.82	 91.95
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 91.09	 92.82	 91.95
+		Avg2.	529	539	491	 91.09	 92.82	 91.95
+
+
+	Current max chunk-based F1:  92.93 (iteration 24)
+	Training iteration elapsed (including testing & evaluation time): 3 seconds
+
+Iteration: 47
+	Log-likelihood                       =       -439.727547
+	Norm(log-likelihood gradient vector) =         93.390461
+	Norm(lambda vector)                  =         97.525655
+	Iteration elapsed: 2 seconds
+	Label-based performance evaluation:
+
+		Label	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		b-np	529	539	514	 95.36	 97.16	 96.25
+		o	725	746	722	 96.78	 99.59	 98.16
+		i-np	691	660	651	 98.64	 94.21	 96.37
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 96.93	 96.99	 96.96
+		Avg2.	1945	1945	1887	 97.02	 97.02	 97.02
+
+	Chunk-based performance evaluation:
+
+		Chunk	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		np	529	539	491	 91.09	 92.82	 91.95
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 91.09	 92.82	 91.95
+		Avg2.	529	539	491	 91.09	 92.82	 91.95
+
+
+	Current max chunk-based F1:  92.93 (iteration 24)
+	Training iteration elapsed (including testing & evaluation time): 2 seconds
+
+Iteration: 48
+	Log-likelihood                       =       -435.807013
+	Norm(log-likelihood gradient vector) =         51.727578
+	Norm(lambda vector)                  =        100.255725
+	Iteration elapsed: 3 seconds
+	Label-based performance evaluation:
+
+		Label	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		b-np	529	539	514	 95.36	 97.16	 96.25
+		o	725	746	722	 96.78	 99.59	 98.16
+		i-np	691	660	651	 98.64	 94.21	 96.37
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 96.93	 96.99	 96.96
+		Avg2.	1945	1945	1887	 97.02	 97.02	 97.02
+
+	Chunk-based performance evaluation:
+
+		Chunk	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		np	529	539	491	 91.09	 92.82	 91.95
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 91.09	 92.82	 91.95
+		Avg2.	529	539	491	 91.09	 92.82	 91.95
+
+
+	Current max chunk-based F1:  92.93 (iteration 24)
+	Training iteration elapsed (including testing & evaluation time): 3 seconds
+
+Iteration: 49
+	Log-likelihood                       =       -422.232281
+	Norm(log-likelihood gradient vector) =         30.394636
+	Norm(lambda vector)                  =         99.185419
+	Iteration elapsed: 2 seconds
+	Label-based performance evaluation:
+
+		Label	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		b-np	529	538	512	 95.17	 96.79	 95.97
+		o	725	748	722	 96.52	 99.59	 98.03
+		i-np	691	659	649	 98.48	 93.92	 96.15
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 96.72	 96.76	 96.74
+		Avg2.	1945	1945	1883	 96.81	 96.81	 96.81
+
+	Chunk-based performance evaluation:
+
+		Chunk	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		np	529	538	489	 90.89	 92.44	 91.66
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 90.89	 92.44	 91.66
+		Avg2.	529	538	489	 90.89	 92.44	 91.66
+
+
+	Current max chunk-based F1:  92.93 (iteration 24)
+	Training iteration elapsed (including testing & evaluation time): 3 seconds
+
+Iteration: 50
+	Log-likelihood                       =       -407.762496
+	Norm(log-likelihood gradient vector) =         19.678027
+	Norm(lambda vector)                  =         98.675566
+	Iteration elapsed: 2 seconds
+	Label-based performance evaluation:
+
+		Label	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		b-np	529	538	512	 95.17	 96.79	 95.97
+		o	725	748	722	 96.52	 99.59	 98.03
+		i-np	691	659	649	 98.48	 93.92	 96.15
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 96.72	 96.76	 96.74
+		Avg2.	1945	1945	1883	 96.81	 96.81	 96.81
+
+	Chunk-based performance evaluation:
+
+		Chunk	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		np	529	538	489	 90.89	 92.44	 91.66
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 90.89	 92.44	 91.66
+		Avg2.	529	538	489	 90.89	 92.44	 91.66
+
+
+	Current max chunk-based F1:  92.93 (iteration 24)
+	Training iteration elapsed (including testing & evaluation time): 2 seconds
+
+Iteration: 51
+	Log-likelihood                       =       -395.745090
+	Norm(log-likelihood gradient vector) =         20.766464
+	Norm(lambda vector)                  =         99.551565
+	Iteration elapsed: 3 seconds
+	Label-based performance evaluation:
+
+		Label	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		b-np	529	536	511	 95.34	 96.60	 95.96
+		o	725	747	721	 96.52	 99.45	 97.96
+		i-np	691	662	650	 98.19	 94.07	 96.08
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 96.68	 96.70	 96.69
+		Avg2.	1945	1945	1882	 96.76	 96.76	 96.76
+
+	Chunk-based performance evaluation:
+
+		Chunk	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		np	529	536	488	 91.04	 92.25	 91.64
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 91.04	 92.25	 91.64
+		Avg2.	529	536	488	 91.04	 92.25	 91.64
+
+
+	Current max chunk-based F1:  92.93 (iteration 24)
+	Training iteration elapsed (including testing & evaluation time): 3 seconds
+
+Iteration: 52
+	Log-likelihood                       =       -368.102936
+	Norm(log-likelihood gradient vector) =         45.527162
+	Norm(lambda vector)                  =        103.718326
+	Iteration elapsed: 2 seconds
+	Label-based performance evaluation:
+
+		Label	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		b-np	529	541	515	 95.19	 97.35	 96.26
+		o	725	752	723	 96.14	 99.72	 97.90
+		i-np	691	652	646	 99.08	 93.49	 96.20
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 96.81	 96.86	 96.83
+		Avg2.	1945	1945	1884	 96.86	 96.86	 96.86
+
+	Chunk-based performance evaluation:
+
+		Chunk	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		np	529	541	493	 91.13	 93.19	 92.15
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 91.13	 93.19	 92.15
+		Avg2.	529	541	493	 91.13	 93.19	 92.15
+
+
+	Current max chunk-based F1:  92.93 (iteration 24)
+	Training iteration elapsed (including testing & evaluation time): 2 seconds
+
+Iteration: 53
+	Log-likelihood                       =       -359.217619
+	Norm(log-likelihood gradient vector) =         68.098375
+	Norm(lambda vector)                  =        106.930981
+	Iteration elapsed: 3 seconds
+	Label-based performance evaluation:
+
+		Label	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		b-np	529	538	512	 95.17	 96.79	 95.97
+		o	725	749	722	 96.40	 99.59	 97.96
+		i-np	691	658	648	 98.48	 93.78	 96.07
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 96.68	 96.72	 96.70
+		Avg2.	1945	1945	1882	 96.76	 96.76	 96.76
+
+	Chunk-based performance evaluation:
+
+		Chunk	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		np	529	538	489	 90.89	 92.44	 91.66
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 90.89	 92.44	 91.66
+		Avg2.	529	538	489	 90.89	 92.44	 91.66
+
+
+	Current max chunk-based F1:  92.93 (iteration 24)
+	Training iteration elapsed (including testing & evaluation time): 3 seconds
+
+Iteration: 54
+	Log-likelihood                       =       -357.663866
+	Norm(log-likelihood gradient vector) =         22.534039
+	Norm(lambda vector)                  =        105.223458
+	Iteration elapsed: 2 seconds
+	Label-based performance evaluation:
+
+		Label	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		b-np	529	536	511	 95.34	 96.60	 95.96
+		o	725	747	721	 96.52	 99.45	 97.96
+		i-np	691	662	650	 98.19	 94.07	 96.08
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 96.68	 96.70	 96.69
+		Avg2.	1945	1945	1882	 96.76	 96.76	 96.76
+
+	Chunk-based performance evaluation:
+
+		Chunk	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		np	529	536	488	 91.04	 92.25	 91.64
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 91.04	 92.25	 91.64
+		Avg2.	529	536	488	 91.04	 92.25	 91.64
+
+
+	Current max chunk-based F1:  92.93 (iteration 24)
+	Training iteration elapsed (including testing & evaluation time): 3 seconds
+
+Iteration: 55
+	Log-likelihood                       =       -355.682217
+	Norm(log-likelihood gradient vector) =         17.408526
+	Norm(lambda vector)                  =        107.620719
+	Iteration elapsed: 2 seconds
+	Label-based performance evaluation:
+
+		Label	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		b-np	529	537	511	 95.16	 96.60	 95.87
+		o	725	748	721	 96.39	 99.45	 97.90
+		i-np	691	660	648	 98.18	 93.78	 95.93
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 96.58	 96.61	 96.59
+		Avg2.	1945	1945	1880	 96.66	 96.66	 96.66
+
+	Chunk-based performance evaluation:
+
+		Chunk	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		np	529	537	487	 90.69	 92.06	 91.37
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 90.69	 92.06	 91.37
+		Avg2.	529	537	487	 90.69	 92.06	 91.37
+
+
+	Current max chunk-based F1:  92.93 (iteration 24)
+	Training iteration elapsed (including testing & evaluation time): 2 seconds
+
+Iteration: 56
+	Log-likelihood                       =       -354.663624
+	Norm(log-likelihood gradient vector) =         39.336816
+	Norm(lambda vector)                  =        109.522797
+	Iteration elapsed: 3 seconds
+	Label-based performance evaluation:
+
+		Label	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		b-np	529	539	513	 95.18	 96.98	 96.07
+		o	725	748	721	 96.39	 99.45	 97.90
+		i-np	691	658	648	 98.48	 93.78	 96.07
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 96.68	 96.73	 96.71
+		Avg2.	1945	1945	1882	 96.76	 96.76	 96.76
+
+	Chunk-based performance evaluation:
+
+		Chunk	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		np	529	539	489	 90.72	 92.44	 91.57
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 90.72	 92.44	 91.57
+		Avg2.	529	539	489	 90.72	 92.44	 91.57
+
+
+	Current max chunk-based F1:  92.93 (iteration 24)
+	Training iteration elapsed (including testing & evaluation time): 3 seconds
+
+Iteration: 57
+	Log-likelihood                       =       -361.274244
+	Norm(log-likelihood gradient vector) =         29.799452
+	Norm(lambda vector)                  =        111.629217
+	Iteration elapsed: 2 seconds
+	Label-based performance evaluation:
+
+		Label	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		b-np	529	537	511	 95.16	 96.60	 95.87
+		o	725	748	721	 96.39	 99.45	 97.90
+		i-np	691	660	648	 98.18	 93.78	 95.93
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 96.58	 96.61	 96.59
+		Avg2.	1945	1945	1880	 96.66	 96.66	 96.66
+
+	Chunk-based performance evaluation:
+
+		Chunk	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		np	529	537	487	 90.69	 92.06	 91.37
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 90.69	 92.06	 91.37
+		Avg2.	529	537	487	 90.69	 92.06	 91.37
+
+
+	Current max chunk-based F1:  92.93 (iteration 24)
+	Training iteration elapsed (including testing & evaluation time): 2 seconds
+
+Iteration: 58
+	Log-likelihood                       =       -354.843561
+	Norm(log-likelihood gradient vector) =         33.393083
+	Norm(lambda vector)                  =        109.864393
+	Iteration elapsed: 3 seconds
+	Label-based performance evaluation:
+
+		Label	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		b-np	529	537	511	 95.16	 96.60	 95.87
+		o	725	748	721	 96.39	 99.45	 97.90
+		i-np	691	660	648	 98.18	 93.78	 95.93
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 96.58	 96.61	 96.59
+		Avg2.	1945	1945	1880	 96.66	 96.66	 96.66
+
+	Chunk-based performance evaluation:
+
+		Chunk	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		np	529	537	487	 90.69	 92.06	 91.37
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 90.69	 92.06	 91.37
+		Avg2.	529	537	487	 90.69	 92.06	 91.37
+
+
+	Current max chunk-based F1:  92.93 (iteration 24)
+	Training iteration elapsed (including testing & evaluation time): 3 seconds
+
+Iteration: 59
+	Log-likelihood                       =       -354.672323
+	Norm(log-likelihood gradient vector) =         38.094772
+	Norm(lambda vector)                  =        109.591104
+	Iteration elapsed: 2 seconds
+	Label-based performance evaluation:
+
+		Label	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		b-np	529	537	511	 95.16	 96.60	 95.87
+		o	725	748	721	 96.39	 99.45	 97.90
+		i-np	691	660	648	 98.18	 93.78	 95.93
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 96.58	 96.61	 96.59
+		Avg2.	1945	1945	1880	 96.66	 96.66	 96.66
+
+	Chunk-based performance evaluation:
+
+		Chunk	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		np	529	537	487	 90.69	 92.06	 91.37
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 90.69	 92.06	 91.37
+		Avg2.	529	537	487	 90.69	 92.06	 91.37
+
+
+	Current max chunk-based F1:  92.93 (iteration 24)
+	Training iteration elapsed (including testing & evaluation time): 3 seconds
+
+Iteration: 60
+	Log-likelihood                       =       -354.664311
+	Norm(log-likelihood gradient vector) =         39.076807
+	Norm(lambda vector)                  =        109.536994
+	Iteration elapsed: 2 seconds
+	Label-based performance evaluation:
+
+		Label	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		b-np	529	537	511	 95.16	 96.60	 95.87
+		o	725	748	721	 96.39	 99.45	 97.90
+		i-np	691	660	648	 98.18	 93.78	 95.93
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 96.58	 96.61	 96.59
+		Avg2.	1945	1945	1880	 96.66	 96.66	 96.66
+
+	Chunk-based performance evaluation:
+
+		Chunk	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		np	529	537	487	 90.69	 92.06	 91.37
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 90.69	 92.06	 91.37
+		Avg2.	529	537	487	 90.69	 92.06	 91.37
+
+
+	Current max chunk-based F1:  92.93 (iteration 24)
+	Training iteration elapsed (including testing & evaluation time): 2 seconds
+
+The training process elapsed: 160 seconds
+
+	Label-based performance evaluation:
+
+		Label	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		b-np	529	532	516	 96.99	 97.54	 97.27
+		o	725	744	723	 97.18	 99.72	 98.43
+		i-np	691	669	660	 98.65	 95.51	 97.06
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 97.61	 97.59	 97.60
+		Avg2.	1945	1945	1899	 97.63	 97.63	 97.63
+
+	Chunk-based performance evaluation:
+
+		Chunk	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		np	529	532	493	 92.67	 93.19	 92.93
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 92.67	 93.19	 92.93
+		Avg2.	529	532	493	 92.67	 93.19	 92.93
+
